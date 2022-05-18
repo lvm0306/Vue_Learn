@@ -18,11 +18,13 @@
         },
         computed: {
             title: function() {
-                return (this.routesList.filter(v => v.path == this.$route.path)[0] || {meta: { title: "" }}).meta.title;
+                return this.$route.meta.title;
+                // return (this.routesList.filter(v => v.path == this.$route.path)[0] || {meta: { title: "" }}).meta.title;
             }
         },
         created() {
-
+            console.log(this.$router);
+            console.log(this.$route);
         },
         mounted() {
 

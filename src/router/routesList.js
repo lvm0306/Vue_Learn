@@ -1,7 +1,11 @@
 export default [
-	{ path: '/', meta: { title: "首页" }, component: resolve => import('../page/oneIndex') },
-	{ path: '/circulate', meta: { title: "循环练习" }, component: resolve => import('../page/circulatePage') },
-	{ path: '/formwork', meta: { title: "模板语法练习" }, component: resolve => import('../page/formworkPage') },
+	{ path: '/', meta: { title: "首页" }, component: resolve => import('../page/oneIndex'),children: [
+            { path: '/', meta: { title: "首页" }, component: resolve => import('../page/menuPage') },
+            { path: '/circulate', meta: { title: "循环练习" }, component: resolve => import('../page/circulatePage') },
+            { path: '/formwork', meta: { title: "模板语法练习" }, component: resolve => import('../page/formworkPage') },
+		] },
+	// { path: '/circulate', meta: { title: "循环练习" }, component: resolve => import('../page/circulatePage') },
+	// { path: '/formwork', meta: { title: "模板语法练习" }, component: resolve => import('../page/formworkPage') },
 	// { path: '/recharge', meta: { title: "会员充值" }, component: resolve => import('pages/recharge') },
 	// { path: '/equipment', meta: { title: "器材展示" }, component: resolve => import('pages/equipment') },
 	// { path: '/lost', meta: { title: "遗失物品" }, component: resolve => import('pages/lost') },
