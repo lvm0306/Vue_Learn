@@ -15,7 +15,8 @@
                             <el-menu-item index="1-1" @click="goHost">首页</el-menu-item>
                             <el-menu-item index="1-2" @click="goCirculate">基础</el-menu-item>
                             <el-menu-item index="1-3" @click="goFormwork">模板语法</el-menu-item>
-                            <el-menu-item index="1-4"></el-menu-item>
+                            <el-menu-item index="1-4" @click="gocalcpro">属性计算</el-menu-item>
+                            <el-menu-item index="1-5"></el-menu-item>
 
                         </el-menu-item-group>
                         <!--<el-menu-item-group title="分组2">-->
@@ -79,6 +80,10 @@
             goFormwork() {
                 this.$router.push('/formwork')
                 console.log("formwork");
+            },
+            gocalcpro() {
+                this.$router.push('/calcpro')
+                console.log("gocalcpro");
             }
         }
     }

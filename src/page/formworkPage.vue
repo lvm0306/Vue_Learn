@@ -16,11 +16,26 @@
         <el-button v-bind:id="dynamicId" @click="vbind">修改单向绑定</el-button>
         <hr>
         <div> 4.使用 JavaScript 表达式</div>
-        <div> {{ number + 1 }}
-
+        <div>
+            {{ number + 1 }}
+            <br/>
             {{ ok ? 'YES' : 'NO' }}
-
-            {{ // message.split('').reverse().join('') }}
+        </div>
+        <div>
+            简单缩写
+        </div>
+        <div>
+            <!-- 完整语法 -->
+            v-bind:href="url"
+            <br/>
+            <!-- 缩写 -->
+            :href="url"
+            <br/>
+            <!-- 完整语法 -->
+            v-on:click="doSomething"
+            <br/>
+            <!-- 缩写 -->
+            @click="doSomething"
         </div>
     </div>
 </template>
@@ -39,7 +54,7 @@
                 city: "",
                 info: "",
                 dynamicId: false,
-                num: 1,
+                number: 1,
                 ok: true,
                 dynamicText: "zifuchuan",
                 rawHtml: "<span style=\"color: red\">This should be red.</span>",

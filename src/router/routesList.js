@@ -3,6 +3,7 @@ export default [
             { path: '/', meta: { title: "首页" }, component: resolve => import('../page/menuPage') },
             { path: '/circulate', meta: { title: "循环练习" }, component: resolve => import('../page/circulatePage') },
             { path: '/formwork', meta: { title: "模板语法练习" }, component: resolve => import('../page/formworkPage') },
+            { path: '/calcpro', meta: { title: "属性计算练习" }, component: resolve => import('../page/calcproPage') },
 		] },
 	// { path: '/circulate', meta: { title: "循环练习" }, component: resolve => import('../page/circulatePage') },
 	// { path: '/formwork', meta: { title: "模板语法练习" }, component: resolve => import('../page/formworkPage') },

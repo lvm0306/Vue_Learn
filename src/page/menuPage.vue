@@ -7,6 +7,7 @@
         <el-button type="primary" @click="goFormwork">模板语法</el-button>
         <br/>
         <br/>
+        <el-button type="primary" @click="gocalcpro">属性计算</el-button>
 
     </div>
 </template>
@@ -23,6 +24,10 @@
             goFormwork() {
                 this.$router.push('/formwork')
                 console.log("formwork");
+            },
+            gocalcpro() {
+                this.$router.push('/calcpro')
+                console.log("gocalcpro");
             }
         }
     }
